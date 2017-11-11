@@ -43,4 +43,15 @@ public class TestConverter {
 
     //徐老师这里讲的有问题，当传入小于-128的值是，无法正确获得
 
+    @Test
+    public  void test2(){
+        System.out.println(~1);
+        System.out.println(~1);
+        System.out.println(~1);
+        System.out.println(~1);
+        System.out.println(~1);
+    }
+
+
+
 }
