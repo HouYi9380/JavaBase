@@ -23,7 +23,8 @@ public class TestConverter {
      * 将字节数组转换为整形
      */
     public int bytes2Int(byte[] bytes){
-        int i0 = bytes[0] ;
+//        int i0 = bytes[0] ;
+        int i0 = bytes[0] & 0xFF;//徐老师找到bug并修复
         int i1 = (bytes[1] & 0xFF) << 8 ;
         int i2 = (bytes[2] & 0xFF) << 16 ;
         int i3 = (bytes[3] & 0xFF) << 24 ;

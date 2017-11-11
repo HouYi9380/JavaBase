@@ -9,8 +9,9 @@ public class Archiver {
     public static void main(String[] args) throws Exception {
         //归档生成到某个地方
         FileOutputStream fos = new FileOutputStream("/Users/zhuxinyi/Desktop/IDEAFile/arch/x.xar") ;
+//        FileOutputStream fos = new FileOutputStream("/Users/zhuxinyi/Desktop/IDEAFile/arch/x.xar",true);默认是覆盖，加true是追加模式
         fos.write(addFile("/Users/zhuxinyi/Desktop/IDEAFile/arch/a.jpg"));
-        fos.write(addFile("/Users/zhuxinyi/Desktop/IDEAFile/arch/b.pdf"));
+//        fos.write(addFile("/Users/zhuxinyi/Desktop/IDEAFile/arch/b.pdf"));
         fos.write(addFile("/Users/zhuxinyi/Desktop/IDEAFile/arch/c.txt"));
 
         fos.close();
